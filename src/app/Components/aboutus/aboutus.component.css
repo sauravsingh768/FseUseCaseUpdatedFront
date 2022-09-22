@@ -1,0 +1,17 @@
+.display-4
+    {background-color: #192f93;
+        font-size: 25px;
+        text-align:center;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        align-items: center;}
+
+        .address
+    {background-color: #192f93;
+        font-size: 17px;
+        text-align:center;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+       }

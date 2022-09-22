@@ -1,0 +1,37 @@
+<div id="box">
+    <h3 style="text-align: center;">SignUp if New Here </h3>
+    <div id="items">
+          <br>
+          <div class="col">
+            <label for="floatingInput">First Name</label>
+            <input type="text" [(ngModel)]=auth.firstName  class="form-control" id="floatingInput" placeholder="First Name">
+            
+            <label for="floatingInput">Last Name</label>
+            <input type="text" [(ngModel)]=auth.lastName  class="form-control" id="floatingInput" placeholder="Last Name">
+            
+
+            <label for="floatingInput">User Name</label>
+            <input type="text" [(ngModel)]=auth.userName  class="form-control" id="floatingInput" placeholder="User Name">
+            
+            <label for="floatingInput">Email</label>
+          <div class="form-floating mb-3">
+            <input type="text" [(ngModel)]=auth.email (change)="checkDuplicate()" class="form-control" id="floatingInput" placeholder="name@example.com">
+           
+          </div>
+          <div class="form-floating">
+            <label for="floatingSelect">Select Role (author or reader)</label>
+            <select class="form-select" [(ngModel)]=auth.role  id="floatingSelect" aria-label="Floating label select example">
+              <option value="author">Author</option>
+              <option value ="reader">Reader</option>
+            </select>
+            
+          </div>
+          <br>
+          <div class="form-floating mb-3">
+            <label for="floatingInput">Password</label>
+            <input type="text" [(ngModel)]=auth.password  class="form-control" id="floatingInput" placeholder="enter password , it should contain atleast 8 characters">
+            
+          </div>
+          <button type="button" (click)="createUser()"   style="margin-bottom: 20px;" class="btn btn-success">save</button>
+        </div>
+</div>

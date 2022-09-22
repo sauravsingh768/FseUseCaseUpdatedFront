@@ -1,0 +1,15 @@
+.Theme{
+    align-items: center;
+    font-size: 35px ;
+    background-color: #199319;
+    text-align: center;
+}
+
+.navbar-brand{
+  
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+  
+}

@@ -1,0 +1,77 @@
+
+
+<div id="items">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <!-- <th scope="col">Id</th> -->
+          <th scope="col">Image</th>
+          <th scope="col">Title</th>
+          <th scope="col">Category</th>
+          <th scope="col">Price</th>
+          <th scope="col">Publisher</th>
+          <th scope="col">Active</th>
+          <th scope="col">Author Name</th>
+          <th scope="col">Publish Date</th>
+          <th scope="col">Content</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let book of orderbook;index as i">
+        <tr>
+          <td>
+            <img src={{book.image}} style="width: 60px;height: 60px;">
+          </td>
+          <td>
+            {{book.title}}
+          </td>
+          <td>
+            {{book.category}}
+          </td>
+          <td>
+            {{book.price}}
+          </td>
+          <td>
+            {{book.publisher}}
+          </td>
+          <td>
+            {{book.active}}
+          </td>
+          <td>
+            {{book.authorName}}
+          </td>
+          <td>
+             17-09-2022
+          </td>
+          <td>
+            {{book.content}}
+          </td>
+          <div>
+
+          <input type="text" id="form3Example1c" class="form-control"
+
+          placeholder="readerName" [(ngModel)]=buyBook.readerName  name="Reader Name" />
+
+          <label class="form-label"></label>
+
+        </div>
+
+        
+
+        <div>
+
+          <input type="text" id="form3Example1c" class="form-control"
+
+          placeholder="readerEmailId" [(ngModel)]=buyBook.readerEmailId  name="Reader Email Id" />
+
+          <label class="form-label"></label>
+
+        </div>
+
+       
+
+
+
+<a type="submit" class="btn btn-primary placeOrder" routerLink="/readerdashboard" (click)=" saveReaderDetails(buyBook)
+
+  ">Order</a>
